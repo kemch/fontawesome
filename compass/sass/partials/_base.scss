@@ -1,0 +1,85 @@
+@import "compass";
+
+* {
+	@include box-sizing(border-box)
+}
+
+// ==========================
+// ==========================
+// Mixins, Extends
+// ==========================
+// ==========================
+
+@mixin clear { &:before,
+	&:after { display: table; content: ""; line-height: 0; }
+	&:after { clear: both; }
+}
+
+a {
+	color: #000;
+}
+
+
+.fa-hover a {
+	// display: none;
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.fa-hover {
+	text-align: center;
+	.text-muted {
+		display: none;
+	}
+}
+
+.fa {
+	font-size: 5em;
+	text-align: center;
+	display: block;
+	margin-bottom: 10px;
+	&:after {
+		display: block;
+		content: " ";
+	}
+}
+
+.fa-hover {
+}
+
+.row {
+	@include clear;
+	background-color: #000;
+}
+
+.col-md-3 {
+	padding: 50px;
+	position: relative;
+	float: left;
+	width: 25%;
+	background-color: #000;
+	border-bottom: 1px solid #222;
+	border-right: 1px solid #222;
+	@include transition(background-color 0.6s ease);
+	i {
+		@include transition(color 0.4s ease);
+		color: #333;
+	}
+	&:hover {
+		background-color: #222;
+		i {
+			color: #fff;
+		}
+		a {
+			color: #555;
+		}
+	}
+}
+
+.container {
+	
+}
