@@ -1,8 +1,14 @@
 @import "compass";
 
-* {
-	@include box-sizing(border-box)
-}
+// ==========================
+// ==========================
+// Vars
+// ==========================
+// ==========================
+
+$black: #000;
+$white: #fff;
+$yellow: yellow;
 
 // ==========================
 // ==========================
@@ -15,12 +21,52 @@
 	&:after { clear: both; }
 }
 
-a {
-	color: #000;
+* {
+	@include box-sizing(border-box)
 }
 
+// #myInputField {
+// 	position: relative;
+// 	z-index: 999;
+// }
 
-.fa-hover a {
+	::selection {
+		background: $yellow;
+	}
+	::-moz-selection {
+		background: $yellow;
+	}
+
+body {
+	background-color: $black;
+	font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+	color: $white;
+}
+
+a {
+	color: $black;
+}
+
+.page-header {
+	padding: 0 15px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.nav {
+	text-align: center;
+	li {
+
+	}
+}
+
+.selectOnClick {
 	// display: none;
 	position: absolute;
 	bottom: 15px;
@@ -28,9 +74,51 @@ a {
 	display: block;
 	width: 100%;
 	text-align: center;
+	color: darken($white,50);
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	padding: 5px;
+
+	&::selection {
+		background: $yellow;
+	}
+	&::-moz-selection {
+		background: $yellow;
+	}
+}
+
+.active {
+	.selectOnClick {
+		background-color: $white;
+		color: $black;
+	}
+}
+
+.fa-hover a {
+	display: none;
 }
 
 .fa-hover {
+	padding: 50px;
+	position: relative;
+	float: left;
+	width: 25%;
+	cursor: pointer;
+	background-color: $black;
+	border-bottom: 1px solid #222;
+	border-right: 1px solid #222;
+	@include transition(background-color 0.6s ease);
+	i {
+		@include transition(color 0.4s ease);
+		color: darken($white,10);
+	}
+	&:hover {
+		background-color: #222;
+		i {
+			color: $white;
+		}
+	}
 	text-align: center;
 	.text-muted {
 		display: none;
@@ -48,38 +136,6 @@ a {
 	}
 }
 
-.fa-hover {
-}
-
 .row {
 	@include clear;
-	background-color: #000;
-}
-
-.col-md-3 {
-	padding: 50px;
-	position: relative;
-	float: left;
-	width: 25%;
-	background-color: #000;
-	border-bottom: 1px solid #222;
-	border-right: 1px solid #222;
-	@include transition(background-color 0.6s ease);
-	i {
-		@include transition(color 0.4s ease);
-		color: #333;
-	}
-	&:hover {
-		background-color: #222;
-		i {
-			color: #fff;
-		}
-		a {
-			color: #555;
-		}
-	}
-}
-
-.container {
-	
 }
