@@ -8,6 +8,13 @@
 
 $black: #000;
 $white: #fff;
+
+$border-light: #E6E6E6;
+$border-dark: #222;
+
+$text-light: #808080;
+$text-dark: #808080;
+
 $yellow: yellow;
 
 // ==========================
@@ -38,60 +45,180 @@ $yellow: yellow;
 	}
 
 body {
-	background-color: $black;
 	font-family: "Courier New", Courier, monospace;
+	padding-top: 40px;
+}
+
+body[data-size="1"] {
+	h2 {
+		padding: 2em 15px;
+	}
+	.fa-hover {
+		width: 150px;
+		padding: 10px;
+
+		.fa {
+			font-size: 2.5em;
+		}
+
+		.selectOnClick {
+			font-size: 0.75em;
+			padding: 2px;
+			width: 100%;
+		}
+	}
+}
+
+body[data-size="2"] {
+	.fa-hover {
+		width: 20%;
+		padding: 40px;
+
+		.fa {
+			font-size: 3em;
+		}
+	}
+
+	.selectOnClick {
+		width: 100%;
+	}
+
+}
+body[data-size="4"] {
+	.fa-hover {
+		width: 50%;
+		padding: 100px 20px;
+		.fa {
+			font-size: 7em;
+		}
+	}
+}
+body[data-size="5"] {
+	.fa-hover {
+		width: 100%;
+		padding: 100px 20px;
+	}	
+}
+
+
+
+.black {
+	background-color: $black;
+	color: $white;
+	.selectOnClick {
+		color: $text-light;
+	}
+	.fa-hover {
+		border-color: $border-dark;
+		&:hover {
+			border-color: lighten($border-dark,5);
+		}
+	}
+}
+.white {
+	background-color: darken($white,2);
+	color: $black;
+	.selectOnClick {
+		color: $text-dark;
+	}
+	.fa-hover {
+		border-color: $border-light;
+		&:hover {
+			border-color: darken($border-light,5);
+		}
+	}
+}
+
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 h2 {
-	color: $white;
+	border-bottom: 1px solid #222;
+	margin: 0;
+	padding: 0.5em 15px;
+	text-align: center;
+	.white & {
+		color: $black;
+		border-color: darken($white,10);
+	}
+	.black & {
+		color: $white;
+		border-color: lighten($black,40);
+	}
 }
 
 a {
 	color: $black;
 }
 
-.page-header {
-	padding: 0 15px;
-}
-
 header {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	padding: 5px 20px 10px 20px;
+	margin: 0;
+	z-index: 20;
+	background-color: yellow;
+	overflow: hidden;
 }
-.nav {
-	text-align: center;
-	li {
 
+.controls {
+	text-align: left;
+	float: left;
+	li {
+		@include inline-block;
+		position: relative;
+		top: 3px;
+	}
+}
+
+.nav {
+	text-align: right;
+	float: right;
+	@include transition(transform 0.2s ease);
+	@include translateX(0%);
+	li {
+		display: inline;
+		font-size: 0.875em;
+	}
+}
+
+.closed {
+	@include translateX(100%);
+}
+
+.black {
+	.selectOnClick {
+		color: darken($white,50);
 	}
 }
 
 .selectOnClick {
 	// display: none;
-	position: absolute;
-	bottom: 15px;
-	left: 0;
+	position: relative;
+	// bottom: 15px;
+	// left: 0;
 	display: block;
 	width: 100%;
 	text-align: center;
-	color: darken($white,50);
+	
 	background-color: transparent;
-	border: 0;
+	border: 1px solid transparent;
 	cursor: pointer;
 	padding: 5px;
-
-	&::selection {
-		background: $yellow;
-	}
-	&::-moz-selection {
-		background: $yellow;
-	}
 }
 
 .active {
 	.selectOnClick {
 		background-color: $white;
-		color: $black;
+		border: 1px solid $border-light;
+		// color: $black;
+		// width: auto;
+		// font-family: arial, sans-serif;
 	}
 }
 
@@ -105,18 +232,39 @@ header {
 	float: left;
 	width: 25%;
 	cursor: pointer;
-	background-color: $black;
 	border-bottom: 1px solid #222;
 	border-right: 1px solid #222;
+	@include transition(width, padding 0.3s ease);
+
+	.fa {
+		font-size: 5em;
+		text-align: center;
+		display: block;
+		margin-bottom: 10px;
+		&:after {
+			display: block;
+			content: " ";
+		}
+	}
+
 	@include transition(background-color 0.6s ease);
 	i {
 		@include transition(color 0.4s ease);
 		color: darken($white,10);
+		.white & {
+			color: lighten($black,40);
+		}
 	}
 	&:hover {
-		background-color: #222;
+		background-color: $black;
 		i {
 			color: $white;
+		}
+		.white & {
+			background-color: $white;
+			i {
+				color: $black;
+			}
 		}
 	}
 	text-align: center;
@@ -125,16 +273,7 @@ header {
 	}
 }
 
-.fa {
-	font-size: 5em;
-	text-align: center;
-	display: block;
-	margin-bottom: 10px;
-	&:after {
-		display: block;
-		content: " ";
-	}
-}
+
 
 .row {
 	@include clear;
