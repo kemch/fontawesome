@@ -287,142 +287,156 @@ th {
 body {
   font-family: "Courier New", Courier, monospace;
   padding-top: 40px;
+  position: relative;
+  top: 0;
+  -moz-transition: top 0.2s ease;
+  -o-transition: top 0.2s ease;
+  -webkit-transition: top 0.2s ease;
+  transition: top 0.2s ease;
 }
 
-/* line 53, ../compass/sass/partials/_base.scss */
+/* line 56, ../compass/sass/partials/_base.scss */
 body[data-size="1"] h2 {
   padding: 2em 15px;
 }
-/* line 56, ../compass/sass/partials/_base.scss */
+/* line 59, ../compass/sass/partials/_base.scss */
 body[data-size="1"] .fa-hover {
   width: 150px;
   padding: 10px;
 }
-/* line 60, ../compass/sass/partials/_base.scss */
+/* line 63, ../compass/sass/partials/_base.scss */
 body[data-size="1"] .fa-hover .fa {
   font-size: 2.5em;
 }
-/* line 64, ../compass/sass/partials/_base.scss */
+/* line 67, ../compass/sass/partials/_base.scss */
 body[data-size="1"] .fa-hover .selectOnClick {
   font-size: 0.75em;
   padding: 2px;
   width: 100%;
 }
 
-/* line 73, ../compass/sass/partials/_base.scss */
+/* line 76, ../compass/sass/partials/_base.scss */
 body[data-size="2"] .fa-hover {
   width: 20%;
   padding: 40px;
 }
-/* line 77, ../compass/sass/partials/_base.scss */
+/* line 80, ../compass/sass/partials/_base.scss */
 body[data-size="2"] .fa-hover .fa {
   font-size: 3em;
 }
-/* line 82, ../compass/sass/partials/_base.scss */
+/* line 85, ../compass/sass/partials/_base.scss */
 body[data-size="2"] .selectOnClick {
   width: 100%;
 }
 
-/* line 88, ../compass/sass/partials/_base.scss */
+/* line 91, ../compass/sass/partials/_base.scss */
 body[data-size="4"] .fa-hover {
   width: 50%;
   padding: 100px 20px;
 }
-/* line 91, ../compass/sass/partials/_base.scss */
+/* line 94, ../compass/sass/partials/_base.scss */
 body[data-size="4"] .fa-hover .fa {
   font-size: 7em;
 }
 
-/* line 97, ../compass/sass/partials/_base.scss */
+/* line 100, ../compass/sass/partials/_base.scss */
 body[data-size="5"] .fa-hover {
   width: 100%;
   padding: 100px 20px;
 }
+/* line 103, ../compass/sass/partials/_base.scss */
+body[data-size="5"] .fa-hover .fa {
+  font-size: 7em;
+}
 
-/* line 105, ../compass/sass/partials/_base.scss */
+/* line 111, ../compass/sass/partials/_base.scss */
 .black {
   background-color: black;
   color: white;
 }
-/* line 108, ../compass/sass/partials/_base.scss */
+/* line 114, ../compass/sass/partials/_base.scss */
 .black .selectOnClick {
   color: gray;
 }
-/* line 111, ../compass/sass/partials/_base.scss */
+/* line 117, ../compass/sass/partials/_base.scss */
 .black .fa-hover {
   border-color: #222222;
 }
-/* line 113, ../compass/sass/partials/_base.scss */
+/* line 119, ../compass/sass/partials/_base.scss */
 .black .fa-hover:hover {
   border-color: #2f2f2f;
 }
 
-/* line 118, ../compass/sass/partials/_base.scss */
+/* line 124, ../compass/sass/partials/_base.scss */
 .white {
   background-color: #fafafa;
   color: black;
 }
-/* line 121, ../compass/sass/partials/_base.scss */
+/* line 127, ../compass/sass/partials/_base.scss */
 .white .selectOnClick {
   color: gray;
 }
-/* line 124, ../compass/sass/partials/_base.scss */
+/* line 130, ../compass/sass/partials/_base.scss */
 .white .fa-hover {
   border-color: #e6e6e6;
 }
-/* line 126, ../compass/sass/partials/_base.scss */
+/* line 132, ../compass/sass/partials/_base.scss */
 .white .fa-hover:hover {
   border-color: #d9d9d9;
 }
 
-/* line 133, ../compass/sass/partials/_base.scss */
+/* line 139, ../compass/sass/partials/_base.scss */
 ul, ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 139, ../compass/sass/partials/_base.scss */
+/* line 145, ../compass/sass/partials/_base.scss */
 h2 {
   border-bottom: 1px solid #222;
   margin: 0;
   padding: 0.5em 15px;
   text-align: center;
 }
-/* line 144, ../compass/sass/partials/_base.scss */
+/* line 150, ../compass/sass/partials/_base.scss */
 .white h2 {
   color: black;
   border-color: #e6e6e6;
 }
-/* line 148, ../compass/sass/partials/_base.scss */
+/* line 154, ../compass/sass/partials/_base.scss */
 .black h2 {
   color: white;
   border-color: #666666;
 }
 
-/* line 154, ../compass/sass/partials/_base.scss */
+/* line 160, ../compass/sass/partials/_base.scss */
 a {
   color: black;
 }
 
-/* line 158, ../compass/sass/partials/_base.scss */
+/* line 164, ../compass/sass/partials/_base.scss */
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 5px 20px 10px 20px;
   margin: 0;
-  z-index: 20;
+  z-index: 15;
   background-color: yellow;
-  overflow: hidden;
+  height: 35px;
+  -moz-transition: top 0.2s ease;
+  -o-transition: top 0.2s ease;
+  -webkit-transition: top 0.2s ease;
+  transition: top 0.2s ease;
 }
 
-/* line 169, ../compass/sass/partials/_base.scss */
+/* line 177, ../compass/sass/partials/_base.scss */
 .controls {
-  text-align: left;
-  float: left;
+  padding: 5px 20px 10px 20px;
+  text-align: right;
+  float: right;
 }
-/* line 172, ../compass/sass/partials/_base.scss */
+/* line 181, ../compass/sass/partials/_base.scss */
 .controls li {
   display: inline-block;
   vertical-align: middle;
@@ -433,10 +447,35 @@ header {
   top: 3px;
 }
 
-/* line 179, ../compass/sass/partials/_base.scss */
+/* line 188, ../compass/sass/partials/_base.scss */
+#slideOut {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 5px;
+  background-color: yellow;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 6px 4px 4px 4px;
+}
+/* line 198, ../compass/sass/partials/_base.scss */
+#slideOut:hover {
+  background-color: white;
+}
+/* line 201, ../compass/sass/partials/_base.scss */
+.closed #slideOut {
+  background-color: white;
+}
+/* line 203, ../compass/sass/partials/_base.scss */
+.closed #slideOut:hover {
+  background-color: yellow;
+}
+
+/* line 209, ../compass/sass/partials/_base.scss */
 .nav {
-  text-align: right;
-  float: right;
+  text-align: left;
+  float: left;
+  padding: 5px 20px 10px 40px;
   -moz-transition: -moz-transform 0.2s ease;
   -o-transition: -o-transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease;
@@ -446,26 +485,23 @@ header {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
-/* line 184, ../compass/sass/partials/_base.scss */
+/* line 215, ../compass/sass/partials/_base.scss */
 .nav li {
   display: inline;
   font-size: 0.875em;
 }
 
-/* line 190, ../compass/sass/partials/_base.scss */
+/* line 221, ../compass/sass/partials/_base.scss */
 .closed {
-  -moz-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+  top: -35px;
 }
 
-/* line 195, ../compass/sass/partials/_base.scss */
+/* line 226, ../compass/sass/partials/_base.scss */
 .black .selectOnClick {
   color: gray;
 }
 
-/* line 200, ../compass/sass/partials/_base.scss */
+/* line 231, ../compass/sass/partials/_base.scss */
 .selectOnClick {
   position: relative;
   display: block;
@@ -477,18 +513,18 @@ header {
   padding: 5px;
 }
 
-/* line 216, ../compass/sass/partials/_base.scss */
+/* line 247, ../compass/sass/partials/_base.scss */
 .active .selectOnClick {
   background-color: white;
   border: 1px solid #e6e6e6;
 }
 
-/* line 225, ../compass/sass/partials/_base.scss */
+/* line 256, ../compass/sass/partials/_base.scss */
 .fa-hover a {
   display: none;
 }
 
-/* line 229, ../compass/sass/partials/_base.scss */
+/* line 260, ../compass/sass/partials/_base.scss */
 .fa-hover {
   padding: 50px;
   position: relative;
@@ -507,19 +543,19 @@ header {
   transition: background-color 0.6s ease;
   text-align: center;
 }
-/* line 239, ../compass/sass/partials/_base.scss */
+/* line 270, ../compass/sass/partials/_base.scss */
 .fa-hover .fa {
   font-size: 5em;
   text-align: center;
   display: block;
   margin-bottom: 10px;
 }
-/* line 244, ../compass/sass/partials/_base.scss */
+/* line 275, ../compass/sass/partials/_base.scss */
 .fa-hover .fa:after {
   display: block;
   content: " ";
 }
-/* line 251, ../compass/sass/partials/_base.scss */
+/* line 282, ../compass/sass/partials/_base.scss */
 .fa-hover i {
   -moz-transition: color 0.4s ease;
   -o-transition: color 0.4s ease;
@@ -527,27 +563,27 @@ header {
   transition: color 0.4s ease;
   color: #e6e6e6;
 }
-/* line 254, ../compass/sass/partials/_base.scss */
+/* line 285, ../compass/sass/partials/_base.scss */
 .white .fa-hover i {
   color: #666666;
 }
-/* line 258, ../compass/sass/partials/_base.scss */
+/* line 289, ../compass/sass/partials/_base.scss */
 .fa-hover:hover {
   background-color: black;
 }
-/* line 260, ../compass/sass/partials/_base.scss */
+/* line 291, ../compass/sass/partials/_base.scss */
 .fa-hover:hover i {
   color: white;
 }
-/* line 263, ../compass/sass/partials/_base.scss */
+/* line 294, ../compass/sass/partials/_base.scss */
 .white .fa-hover:hover {
   background-color: white;
 }
-/* line 265, ../compass/sass/partials/_base.scss */
+/* line 296, ../compass/sass/partials/_base.scss */
 .white .fa-hover:hover i {
   color: black;
 }
-/* line 271, ../compass/sass/partials/_base.scss */
+/* line 302, ../compass/sass/partials/_base.scss */
 .fa-hover .text-muted {
   display: none;
 }

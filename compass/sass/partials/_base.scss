@@ -47,6 +47,9 @@ $yellow: yellow;
 body {
 	font-family: "Courier New", Courier, monospace;
 	padding-top: 40px;
+	position: relative;
+	top: 0;
+	@include transition(top 0.2s ease);
 }
 
 body[data-size="1"] {
@@ -97,6 +100,9 @@ body[data-size="5"] {
 	.fa-hover {
 		width: 100%;
 		padding: 100px 20px;
+		.fa {
+			font-size: 7em;
+		}
 	}	
 }
 
@@ -159,16 +165,19 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	padding: 5px 20px 10px 20px;
+	// padding: 5px 20px 10px 20px;
 	margin: 0;
-	z-index: 20;
+	z-index: 15;
 	background-color: yellow;
-	overflow: hidden;
+	height: 35px;
+	@include transition(top 0.2s ease);
+	// margin-top: -40px;
 }
 
 .controls {
-	text-align: left;
-	float: left;
+	padding: 5px 20px 10px 20px;
+	text-align: right;
+	float: right;
 	li {
 		@include inline-block;
 		position: relative;
@@ -176,9 +185,31 @@ header {
 	}
 }
 
+#slideOut {
+	position: fixed;
+	z-index: 20;
+	// bottom: -24px;
+	top: 0;
+	left: 5px;
+	background-color: $yellow;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 6px 4px 4px 4px;
+	&:hover {
+		background-color: $white;
+	}
+	.closed & {
+		background-color: $white;
+		&:hover {
+			background-color: $yellow;
+		}
+	}
+}
+
 .nav {
-	text-align: right;
-	float: right;
+	text-align: left;
+	float: left;
+	padding: 5px 20px 10px 40px;
 	@include transition(transform 0.2s ease);
 	@include translateX(0%);
 	li {
@@ -188,7 +219,7 @@ header {
 }
 
 .closed {
-	@include translateX(100%);
+	top: -35px;
 }
 
 .black {
