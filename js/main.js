@@ -44,7 +44,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$('body').addClass('black');
+	$('body').addClass('white');
 
 	$('#makeWhite').click(function(){
 		if ($('body').hasClass('black')) {
@@ -58,7 +58,8 @@ $(document).ready(function(){
 		}
 		return false;
 	});
-	$('body').attr('data-size','3');
+	
+	$('body').attr('data-size','2');
 
 	var size = $('body').data('size'); 
 
@@ -73,7 +74,7 @@ $(document).ready(function(){
 	});
 
 	$('#makeSmaller').click(function(){
-		if (size >= 1) {
+		if (size > 1) {
 			size = size - 1;
 			$('body').attr('data-size',size);
 			console.log(size);
