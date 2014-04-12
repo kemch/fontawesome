@@ -52,7 +52,7 @@ $xsmall: 20em; // 320px
 
 body {
 	font-family: "Courier New", Courier, monospace;
-	padding-top: 40px;
+	padding-top: 100px;
 	position: relative;
 	top: 0;
 	@include transition(top 0.2s ease);
@@ -112,7 +112,9 @@ body[data-size="5"] {
 	}	
 }
 
-
+.container {
+	position: relative;
+}
 
 .black {
 	background-color: $black;
