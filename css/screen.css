@@ -266,24 +266,24 @@ th {
   padding: 0;
 }
 
-/* line 31, ../compass/sass/partials/_base.scss */
+/* line 37, ../compass/sass/partials/_base.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 40, ../compass/sass/partials/_base.scss */
+/* line 46, ../compass/sass/partials/_base.scss */
 ::selection {
   background: yellow;
 }
 
-/* line 43, ../compass/sass/partials/_base.scss */
+/* line 49, ../compass/sass/partials/_base.scss */
 ::-moz-selection {
   background: yellow;
 }
 
-/* line 47, ../compass/sass/partials/_base.scss */
+/* line 53, ../compass/sass/partials/_base.scss */
 body {
   font-family: "Courier New", Courier, monospace;
   padding-top: 40px;
@@ -295,127 +295,127 @@ body {
   transition: top 0.2s ease;
 }
 
-/* line 56, ../compass/sass/partials/_base.scss */
+/* line 62, ../compass/sass/partials/_base.scss */
 body[data-size="1"] h2 {
   padding: 2em 15px;
 }
-/* line 59, ../compass/sass/partials/_base.scss */
+/* line 65, ../compass/sass/partials/_base.scss */
 body[data-size="1"] .fa-hover {
   width: 150px;
   padding: 10px;
 }
-/* line 63, ../compass/sass/partials/_base.scss */
+/* line 69, ../compass/sass/partials/_base.scss */
 body[data-size="1"] .fa-hover .fa {
   font-size: 2.5em;
 }
-/* line 67, ../compass/sass/partials/_base.scss */
+/* line 73, ../compass/sass/partials/_base.scss */
 body[data-size="1"] .fa-hover .selectOnClick {
   font-size: 0.75em;
   padding: 2px;
   width: 100%;
 }
 
-/* line 76, ../compass/sass/partials/_base.scss */
+/* line 82, ../compass/sass/partials/_base.scss */
 body[data-size="2"] .fa-hover {
   width: 20%;
   padding: 40px;
 }
-/* line 80, ../compass/sass/partials/_base.scss */
+/* line 86, ../compass/sass/partials/_base.scss */
 body[data-size="2"] .fa-hover .fa {
   font-size: 3em;
 }
-/* line 85, ../compass/sass/partials/_base.scss */
+/* line 91, ../compass/sass/partials/_base.scss */
 body[data-size="2"] .selectOnClick {
   width: 100%;
 }
 
-/* line 91, ../compass/sass/partials/_base.scss */
+/* line 97, ../compass/sass/partials/_base.scss */
 body[data-size="4"] .fa-hover {
   width: 50%;
   padding: 100px 20px;
 }
-/* line 94, ../compass/sass/partials/_base.scss */
+/* line 100, ../compass/sass/partials/_base.scss */
 body[data-size="4"] .fa-hover .fa {
   font-size: 7em;
 }
 
-/* line 100, ../compass/sass/partials/_base.scss */
+/* line 106, ../compass/sass/partials/_base.scss */
 body[data-size="5"] .fa-hover {
   width: 100%;
   padding: 100px 20px;
 }
-/* line 103, ../compass/sass/partials/_base.scss */
+/* line 109, ../compass/sass/partials/_base.scss */
 body[data-size="5"] .fa-hover .fa {
   font-size: 7em;
 }
 
-/* line 111, ../compass/sass/partials/_base.scss */
+/* line 117, ../compass/sass/partials/_base.scss */
 .black {
   background-color: black;
   color: white;
 }
-/* line 114, ../compass/sass/partials/_base.scss */
+/* line 120, ../compass/sass/partials/_base.scss */
 .black .selectOnClick {
   color: gray;
 }
-/* line 117, ../compass/sass/partials/_base.scss */
+/* line 123, ../compass/sass/partials/_base.scss */
 .black .fa-hover {
   border-color: #222222;
 }
-/* line 119, ../compass/sass/partials/_base.scss */
+/* line 125, ../compass/sass/partials/_base.scss */
 .black .fa-hover:hover {
   border-color: #2f2f2f;
 }
 
-/* line 124, ../compass/sass/partials/_base.scss */
+/* line 130, ../compass/sass/partials/_base.scss */
 .white {
   background-color: #fafafa;
   color: black;
 }
-/* line 127, ../compass/sass/partials/_base.scss */
+/* line 133, ../compass/sass/partials/_base.scss */
 .white .selectOnClick {
   color: gray;
 }
-/* line 130, ../compass/sass/partials/_base.scss */
+/* line 136, ../compass/sass/partials/_base.scss */
 .white .fa-hover {
   border-color: #e6e6e6;
 }
-/* line 132, ../compass/sass/partials/_base.scss */
+/* line 138, ../compass/sass/partials/_base.scss */
 .white .fa-hover:hover {
   border-color: #d9d9d9;
 }
 
-/* line 139, ../compass/sass/partials/_base.scss */
+/* line 145, ../compass/sass/partials/_base.scss */
 ul, ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 145, ../compass/sass/partials/_base.scss */
+/* line 151, ../compass/sass/partials/_base.scss */
 h2 {
   border-bottom: 1px solid #222;
   margin: 0;
   padding: 0.5em 15px;
   text-align: center;
 }
-/* line 150, ../compass/sass/partials/_base.scss */
+/* line 156, ../compass/sass/partials/_base.scss */
 .white h2 {
   color: black;
   border-color: #e6e6e6;
 }
-/* line 154, ../compass/sass/partials/_base.scss */
+/* line 160, ../compass/sass/partials/_base.scss */
 .black h2 {
   color: white;
   border-color: #666666;
 }
 
-/* line 160, ../compass/sass/partials/_base.scss */
+/* line 166, ../compass/sass/partials/_base.scss */
 a {
   color: black;
 }
 
-/* line 164, ../compass/sass/partials/_base.scss */
+/* line 170, ../compass/sass/partials/_base.scss */
 header {
   position: fixed;
   top: 0;
@@ -423,20 +423,19 @@ header {
   margin: 0;
   z-index: 15;
   background-color: yellow;
-  height: 35px;
+  height: 100px;
   -moz-transition: top 0.2s ease;
   -o-transition: top 0.2s ease;
   -webkit-transition: top 0.2s ease;
   transition: top 0.2s ease;
 }
 
-/* line 177, ../compass/sass/partials/_base.scss */
+/* line 183, ../compass/sass/partials/_base.scss */
 .controls {
   padding: 5px 20px 10px 20px;
-  text-align: right;
-  float: right;
+  text-align: center;
 }
-/* line 181, ../compass/sass/partials/_base.scss */
+/* line 186, ../compass/sass/partials/_base.scss */
 .controls li {
   display: inline-block;
   vertical-align: middle;
@@ -446,8 +445,15 @@ header {
   position: relative;
   top: 3px;
 }
+@media (min-width: 0em) and (max-width: 60em) {
+  /* line 183, ../compass/sass/partials/_base.scss */
+  .controls {
+    width: 100%;
+    text-align: center;
+  }
+}
 
-/* line 188, ../compass/sass/partials/_base.scss */
+/* line 198, ../compass/sass/partials/_base.scss */
 #slideOut {
   position: fixed;
   z-index: 20;
@@ -458,24 +464,23 @@ header {
   border-bottom-right-radius: 5px;
   padding: 6px 4px 4px 4px;
 }
-/* line 198, ../compass/sass/partials/_base.scss */
+/* line 207, ../compass/sass/partials/_base.scss */
 #slideOut:hover {
   background-color: white;
 }
-/* line 201, ../compass/sass/partials/_base.scss */
+/* line 210, ../compass/sass/partials/_base.scss */
 .closed #slideOut {
   background-color: white;
 }
-/* line 203, ../compass/sass/partials/_base.scss */
+/* line 212, ../compass/sass/partials/_base.scss */
 .closed #slideOut:hover {
   background-color: yellow;
 }
 
-/* line 209, ../compass/sass/partials/_base.scss */
+/* line 218, ../compass/sass/partials/_base.scss */
 .nav {
-  text-align: left;
-  float: left;
-  padding: 5px 20px 10px 40px;
+  text-align: center;
+  padding: 15px 10px 5px 40px;
   -moz-transition: -moz-transform 0.2s ease;
   -o-transition: -o-transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease;
@@ -485,23 +490,30 @@ header {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
-/* line 215, ../compass/sass/partials/_base.scss */
+/* line 223, ../compass/sass/partials/_base.scss */
 .nav li {
   display: inline;
   font-size: 0.875em;
 }
-
-/* line 221, ../compass/sass/partials/_base.scss */
-.closed {
-  top: -35px;
+@media (min-width: 0em) and (max-width: 60em) {
+  /* line 218, ../compass/sass/partials/_base.scss */
+  .nav {
+    width: 100%;
+    font-size: 0.75em;
+  }
 }
 
-/* line 226, ../compass/sass/partials/_base.scss */
+/* line 234, ../compass/sass/partials/_base.scss */
+.closed {
+  top: -100px;
+}
+
+/* line 239, ../compass/sass/partials/_base.scss */
 .black .selectOnClick {
   color: gray;
 }
 
-/* line 231, ../compass/sass/partials/_base.scss */
+/* line 244, ../compass/sass/partials/_base.scss */
 .selectOnClick {
   position: relative;
   display: block;
@@ -513,18 +525,22 @@ header {
   padding: 5px;
 }
 
-/* line 247, ../compass/sass/partials/_base.scss */
+/* line 260, ../compass/sass/partials/_base.scss */
 .active .selectOnClick {
   background-color: white;
   border: 1px solid #e6e6e6;
 }
+/* line 267, ../compass/sass/partials/_base.scss */
+header .active a {
+  font-weight: bold;
+}
 
-/* line 256, ../compass/sass/partials/_base.scss */
+/* line 272, ../compass/sass/partials/_base.scss */
 .fa-hover a {
   display: none;
 }
 
-/* line 260, ../compass/sass/partials/_base.scss */
+/* line 276, ../compass/sass/partials/_base.scss */
 .fa-hover {
   padding: 50px;
   position: relative;
@@ -543,19 +559,19 @@ header {
   transition: background-color 0.6s ease;
   text-align: center;
 }
-/* line 270, ../compass/sass/partials/_base.scss */
+/* line 286, ../compass/sass/partials/_base.scss */
 .fa-hover .fa {
   font-size: 5em;
   text-align: center;
   display: block;
   margin-bottom: 10px;
 }
-/* line 275, ../compass/sass/partials/_base.scss */
+/* line 291, ../compass/sass/partials/_base.scss */
 .fa-hover .fa:after {
   display: block;
   content: " ";
 }
-/* line 282, ../compass/sass/partials/_base.scss */
+/* line 298, ../compass/sass/partials/_base.scss */
 .fa-hover i {
   -moz-transition: color 0.4s ease;
   -o-transition: color 0.4s ease;
@@ -563,38 +579,38 @@ header {
   transition: color 0.4s ease;
   color: #e6e6e6;
 }
-/* line 285, ../compass/sass/partials/_base.scss */
+/* line 301, ../compass/sass/partials/_base.scss */
 .white .fa-hover i {
   color: #666666;
 }
-/* line 289, ../compass/sass/partials/_base.scss */
+/* line 305, ../compass/sass/partials/_base.scss */
 .fa-hover:hover {
   background-color: black;
 }
-/* line 291, ../compass/sass/partials/_base.scss */
+/* line 307, ../compass/sass/partials/_base.scss */
 .fa-hover:hover i {
   color: white;
 }
-/* line 294, ../compass/sass/partials/_base.scss */
+/* line 310, ../compass/sass/partials/_base.scss */
 .white .fa-hover:hover {
   background-color: white;
 }
-/* line 296, ../compass/sass/partials/_base.scss */
+/* line 312, ../compass/sass/partials/_base.scss */
 .white .fa-hover:hover i {
   color: black;
 }
-/* line 302, ../compass/sass/partials/_base.scss */
+/* line 318, ../compass/sass/partials/_base.scss */
 .fa-hover .text-muted {
   display: none;
 }
 
-/* line 26, ../compass/sass/partials/_base.scss */
+/* line 32, ../compass/sass/partials/_base.scss */
 .row:before, .row:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 28, ../compass/sass/partials/_base.scss */
+/* line 34, ../compass/sass/partials/_base.scss */
 .row:after {
   clear: both;
 }

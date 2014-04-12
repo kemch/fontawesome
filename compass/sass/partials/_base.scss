@@ -17,6 +17,12 @@ $text-dark: #808080;
 
 $yellow: yellow;
 
+$xlarge: 80px; // 1280px;
+$large:  60em; // 960px
+$medium: 48em; // 768px
+$small:  30em; // 480px
+$xsmall: 20em; // 320px
+
 // ==========================
 // ==========================
 // Mixins, Extends
@@ -169,26 +175,29 @@ header {
 	margin: 0;
 	z-index: 15;
 	background-color: yellow;
-	height: 35px;
+	height: 100px;
 	@include transition(top 0.2s ease);
 	// margin-top: -40px;
 }
 
 .controls {
 	padding: 5px 20px 10px 20px;
-	text-align: right;
-	float: right;
+	text-align: center;
 	li {
 		@include inline-block;
 		position: relative;
 		top: 3px;
+	}
+	@include breakpoint(0em $large) {
+		// float: none;
+		width: 100%;
+		text-align: center;
 	}
 }
 
 #slideOut {
 	position: fixed;
 	z-index: 20;
-	// bottom: -24px;
 	top: 0;
 	left: 5px;
 	background-color: $yellow;
@@ -207,19 +216,23 @@ header {
 }
 
 .nav {
-	text-align: left;
-	float: left;
-	padding: 5px 20px 10px 40px;
+	text-align: center;
+	padding: 15px 10px 5px 40px;
 	@include transition(transform 0.2s ease);
 	@include translateX(0%);
 	li {
 		display: inline;
 		font-size: 0.875em;
 	}
+	@include breakpoint(0em $large) {
+		// font-size: 0.875em;
+		width: 100%;
+		font-size: 0.75em;
+	}
 }
 
 .closed {
-	top: -35px;
+	top: -100px;
 }
 
 .black {
@@ -250,6 +263,9 @@ header {
 		// color: $black;
 		// width: auto;
 		// font-family: arial, sans-serif;
+	}
+	header & a {
+		font-weight: bold;
 	}
 }
 

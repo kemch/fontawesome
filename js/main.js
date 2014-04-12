@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 	$('.nav-link').click(function(){
 		var source = $(this).attr('href');
-		var destination = $(source).offset().top - 50;
+		var destination = $(source).offset().top - 100;
 		console.log(destination.top + ' and ' + source);
 		// window.scrollTo(0, destination);
 		// window.scroll(0, destination);
@@ -58,7 +58,7 @@ $(document).ready(function(){
 		}
 		return false;
 	});
-	
+
 	$('body').attr('data-size','2');
 
 	var size = $('body').data('size'); 
